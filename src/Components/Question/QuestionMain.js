@@ -70,6 +70,7 @@ export default class QuestionMain extends Component {
                         選手が一人で走行できない場合はスタッフが許可を出すようにしています。
                     </h5>
                 </Accordion.Content>
+
             </Accordion>
         );
     }
