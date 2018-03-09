@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react'
 import Logo from '../static/tele-shizu.svg';
 import '../index.css';
-import Twitter from '../static/icn-twitter.svg';
-import Facebook from '../static/icn-facebook.svg';
+import Twitter from '../static/twitter.png';
+import Facebook from '../static/facebook.png';
+import Insta from '../static/insta.png';
 
 export default class MenuExampleVertical extends Component {
     state = { activeItem: 'inbox' }
@@ -23,7 +24,7 @@ export default class MenuExampleVertical extends Component {
             }}>
 
                 <Link to = '/' >
-                    <Menu.Item name='inbox' onClick={this.handleItemClick} style = {{height: '15vh', borderBottomStyle: 'dotted', borderBottomColor: 'white' }}>
+                    <Menu.Item name='inbox' onClick={this.handleItemClick} style = {{height: '15vh', borderBottomStyle: 'dotted', borderBottomColor: 'white'}}>
                         <img src = {Logo} />
                     </Menu.Item>
                 </Link>
@@ -76,6 +77,22 @@ export default class MenuExampleVertical extends Component {
                     </Menu.Item>
                 </Link>
 
+                <Link to ="/photos">
+                    <Menu.Item name='updates'  onClick={this.handleItemClick}  style = {{height: '10vh', borderBottomStyle: 'dotted', textAlign:'left', color: 'white'}}>
+                        コンタクト
+                        <div style = {{ position: 'absolute', top: '50%', fontSize: '1.22857143rem', fontWeight: 'bold', textAlign:'left'}}>
+                            CONTACT
+                        </div>
+                    </Menu.Item>
+                </Link>
+
+                <Menu.Item style = {{paddingTop:  '50px'}}>
+                    <div style = {{display: 'flex'}}>
+                        <img src = {Facebook} style = {{width:'35px', height: '35px', marginRight: '20px'}}/>
+                        <img src = {Insta} style = {{width:'35px', height: '35px', marginRight: '20px'}}/>
+                        <img src = {Twitter} style={{width:'35px', height: '35px', marginRight: '20px'}}/>
+                    </div>
+                </Menu.Item>
             </Menu>
         )
     }

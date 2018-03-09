@@ -4,8 +4,14 @@ body {
   font-family:'Share Tech';
 }
 
-.main {
-  margin-left: 182px;
+
+.home {
+    margin-left: 182px;
+}
+
+
+.photo-screen {
+    margin-left: 182px;
 }
 
 #scroll-arrow {
@@ -23,6 +29,17 @@ body {
    .main {
      margin-left: 20px;
      margin-right: 20px;
+   }
+
+
+    .home {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+   .photo-screen {
+       margin-left: 20px;
+       margin-right: 20px;
    }
 }
 

@@ -1,18 +1,18 @@
 import React from 'react';
 import CoverPhoto from './CoverPhoto';
 
-export default function KeyVisualQuesiton() {
+export default function KeyVisualRule() {
     return (
         <div className = 'key-visual' style = {{
             position: 'relative',
             zIndex: 11,
             height: '70vh',
-
+            marginBottom: '50px'
         }}>
             <CoverPhoto />
             <div style = {styles.header}>
-                <div className = 'en' style = {styles.en}>Q&A</div>
-                <div className = 'jp' style = {styles.jp}>よくある質問</div>
+                <div className = 'en' style = {styles.en}>RULES</div>
+                <div className = 'jp' style = {styles.jp}>大会ルール</div>
             </div>
         </div>
     );
