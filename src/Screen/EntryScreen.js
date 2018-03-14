@@ -3,7 +3,14 @@ import React, { Component } from 'react';
 class EntryScreen extends Component {
     render() {
         return (
-            <div>This is Entry</div>
+            <div className="entry-screen">
+            <h1>
+                Coming soon.
+            </h1>
+            <div>
+                近日公開
+            </div>
+            </div>
         );
     }
 }

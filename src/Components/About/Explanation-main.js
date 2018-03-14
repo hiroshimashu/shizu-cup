@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ExplanationMain() {
     return(
-        <p className =  'about-header'　style = {{
+        <p className =  'about-main'　style = {{
             fontSize:'1.1rem',
             lineHeight:  1.78,
             marginTop: '28px',

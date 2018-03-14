@@ -7,7 +7,7 @@ import PhotoCards5 from './PhotoCards_5th';
 class Photos extends Component {
     render() {
         return (
-            <div class = 'contents' style = {styles.container}>
+            <div class = 'container' style = {styles.container}>
                 <div class = '2nd grade' style = { styles.second }>
                     <div class = 'title' style = {styles.secondTitle}>
                         2nd Grade
@@ -47,7 +47,6 @@ const styles = {
     container: {
         position: 'relative',
         maxWidth: '820px' ,
-        margin: '0 auto',
         padding:'20px 0'
     },
     second: {

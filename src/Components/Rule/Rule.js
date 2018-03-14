@@ -5,8 +5,7 @@ import RuleCard from './RuleCard';
 class Rule extends Component {
     render(){
         return (
-            <div className = 'introduction' style = {{
-                height: '50vh',
+            <div className = 'rule-top' style = {{
                 maxWidth: '820px',
                 margin: '0 auto',
                 borderBottom: '1px solid #dcdddd',

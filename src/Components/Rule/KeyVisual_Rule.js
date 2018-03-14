@@ -3,7 +3,7 @@ import CoverPhoto from './CoverPhoto';
 
 export default function KeyVisualRule() {
     return (
-        <div className = 'key-visual' style = {{
+        <div className = 'key-visual-rules' style = {{
             position: 'relative',
             zIndex: 11,
             height: '70vh',

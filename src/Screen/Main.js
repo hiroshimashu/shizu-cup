@@ -4,7 +4,6 @@ import News from '../Components/News/News';
 import Rule from '../Components/Rule/Rule';
 import Entry from '../Components/Entry';
 import Question from '../Components/Question/Question';
-import Photo from '../Components/Photo';
 
 
 export default class Main extends Component {

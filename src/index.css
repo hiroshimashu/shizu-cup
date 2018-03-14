@@ -4,15 +4,76 @@ body {
   font-family:'Share Tech';
 }
 
+.container {
+    margin: 0 auto;
+}
+
+.top-video {
+    height: 768px;
+}
+
+.key-visual {
+    height:768px;
+}
+
+.video-wrapper {
+    height: 768px;
+}
+
+.entry-img {
+    width: 380px;
+    top: 70%;
+}
+
+.entry-main {
+    top: 73%;
+}
+
+.about-header {
+    font-size:1.9rem;
+}
+
+.format-top {
+    font-size:1.4rem;
+}
+
+.format-text {
+    font-size:1.0rem;
+    margin-top: 50px;
+}
+
+.rule-img {
+    width: 300px;
+    height: auto;
+}
+
+
+.question-top {
+    height: 50vh;
+}
 
 .home {
     margin-left: 182px;
 }
 
+.rule-top {
+    height: 50vh;
+}
+
+.rules-screen {
+    margin-left: 182px;
+}
+
+.question-screen {
+    margin-left: 182px;
+}
 
 .photo-screen {
     margin-left: 182px;
 }
+
+
+
 
 #scroll-arrow {
     animation-name: fade-in;
@@ -20,28 +81,203 @@ body {
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
+.scroll {
+    top: 86%;
+}
+.scroll-arrow {
+    top: 88%;
+}
+
+#nav-toggle {
+    display: none;
+    position: fixed;
+    margin-left: 90vw;
+    margin-top: 15.5px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11.5px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 23px;
+}
+
 
 @media (max-width: 800px) {
    #side-bar{
        display: none;
    }
 
-   .main {
-     margin-left: 20px;
-     margin-right: 20px;
-   }
 
-
-    .home {
-        margin-left: 20px;
-        margin-right: 20px;
+    #nav-toggle {
+        display: block;
     }
 
-   .photo-screen {
+    #nav-toggle.open span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    #nav-toggle.open span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+    #nav-toggle.open span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+    }
+
+    #side-bar-small {
+        transform: translateX(-500px);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    #side-bar-small.open {
+        transform: translateX(0px);
+        -webkit-transform:  translateX(0px);
+        -moz-transform:  translateX(0px);
+    }
+
+   .main {
        margin-left: 20px;
        margin-right: 20px;
    }
+   .container {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+
+    .entry-img {
+        width: 300px;
+        top: 50%;
+    }
+
+    .entry-main {
+        top: 53%;
+    }
+
+    .tele-shizu {
+        display: none;
+    }
+
+    .scroll {
+        top: 80%;
+    }
+
+    .scroll-arrow {
+        top: 82%;
+    }
+
+
+    .home {
+        margin-left:0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+    .rules-screen {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+
+    .question-screen {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+
+    .photo-screen {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+
+    .contact-screen {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+
+    .entry-screen {
+
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 65px;
+    }
+
 }
+
+@media (max-width: 767px){
+
+    .about-header {
+        font-size:1.3rem;
+    }
+    .rule-top {
+        height:65vh;
+    }
+
+    .question-top {
+        height: 80vh;
+    }
+}
+ /* smart phone */
+
+@media(max-width: 500px) {
+    .top-video {
+        height: 550px;
+    }
+
+    .video-wrapper {
+        height: 550px;
+    }
+
+    .key-visual {
+        height:500px;
+    }
+
+    .format-top {
+        font-size:1.0rem;
+    }
+
+    .format-text {
+        margin-top:0;
+    }
+
+    .rule-img {
+        width: 180px;
+        height: auto;
+    }
+
+}
+
+
+
+
 
 @keyframes fade-in {
     0% {

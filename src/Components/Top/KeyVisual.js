@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopVideo from './TopVideo';
 import { Icon } from 'semantic-ui-react';
+import  Logo  from '../../static/tele_shizu.svg'
 import '../../index.css';
 
 
@@ -9,8 +10,9 @@ class KeyVisual extends Component {
         return (
            <div style = {styles.keyVisual}  className = 'key-visual'>
                <TopVideo />
+               <img style = {styles.logo} src = {Logo} alt = 'teleShizu' className="tele-shizu"/>
                <div className = 'scroll' style = {styles.scroll}>SCROLL</div>
-               <Icon name = 'angle down' color = 'blue' size =  'huge' id = 'scroll-arrow' style = {styles.arrow}/>
+               <Icon name = 'angle down' color = 'blue' size =  'huge' id = 'scroll-arrow' className='scroll-arrow' style = {styles.arrow}/>
            </div>
         );
     }
@@ -19,12 +21,18 @@ class KeyVisual extends Component {
 const styles = {
     keyVisual: {
         position: 'relative',
-        height: '100vh',
         zIndex: 11
+    },
+    logo: {
+        position: 'absolute',
+        width: '300px',
+        left:'50%',
+        top: '30%',
+        transform: 'translate(-50%, -50%)'
+
     },
     scroll: {
         position: 'absolute',
-        top: '92vh',
         left:'50%',
         transform: 'translateX(-50%)',
         zIndex: 1,
@@ -37,7 +45,6 @@ const styles = {
         position: 'absolute',
         zIndex:1,
         left: '50%',
-        top: '93vh',
         transform:'translateX(-50%)'
     }
 }

@@ -3,7 +3,6 @@ import React from 'react';
 export default function Explanation() {
    return(
        <p className =  'about-header'　style = {{
-           fontSize:'1.9rem',
            fontWeight: 'bold',
            lineHeight:  1.6,
            marginTop: '30px',

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import SectionTitle from '../SectionTitle';
-
 import QuesitonMain from './QuestionMain';
+import { Link } from 'react-router-dom';
 
 class Question extends Component {
     render(){
         return (
-            <div className = 'introduction' style = {{
-                height: '50vh',
+            <div className = 'question-top' style = {{
                 maxWidth: '820px',
                 margin: '0 auto',
                 borderBottom: '1px solid #dcdddd',
@@ -18,6 +17,11 @@ class Question extends Component {
                     subTitle = 'よくある質問'
                 />
                 <QuesitonMain />
+                <div style = {{width: '100%', textAlign: 'right', marginTop: '10px'}}>
+                    <Link to = '/questions'　style = {{marginRight: 0}}>
+                        ＞＞詳細はこちら
+                    </Link>
+                </div>
             </div>
         );
     }

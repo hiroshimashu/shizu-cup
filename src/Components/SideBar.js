@@ -77,7 +77,7 @@ export default class MenuExampleVertical extends Component {
                     </Menu.Item>
                 </Link>
 
-                <Link to ="/photos">
+                <Link to ="/contact">
                     <Menu.Item name='updates'  onClick={this.handleItemClick}  style = {{height: '10vh', borderBottomStyle: 'dotted', textAlign:'left', color: 'white'}}>
                         コンタクト
                         <div style = {{ position: 'absolute', top: '50%', fontSize: '1.22857143rem', fontWeight: 'bold', textAlign:'left'}}>

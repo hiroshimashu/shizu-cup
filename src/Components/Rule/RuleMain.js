@@ -15,7 +15,7 @@ class RuleMain extends Component {
     render() {
 
         return (
-            <div class = 'container' style = { styles.container }>
+            <div className = 'container' style = { styles.container }>
                 <div className="content" style = { styles.contents }>
                     <div className="format-title" style = { styles.formatTitle}>
                         レース形式に関して
@@ -85,7 +85,6 @@ const styles = {
     container: {
         position: 'relative',
         maxWidth: '820px' ,
-        margin: '0 auto',
         padding:'20px 0'
     },
     contents: {
